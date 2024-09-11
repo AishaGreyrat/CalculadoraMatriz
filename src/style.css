@@ -1,0 +1,116 @@
+/* src/styles.css */
+
+/* Estilo global */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+/* Contenedor principal */
+.calculator-container {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Contenedor de matrices */
+.matrix-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Fila de la matriz */
+.matrix-container .row {
+  margin-bottom: 10px;
+}
+
+/* Estilo de inputs */
+.matrix-container input {
+  width: 60px;
+  padding: 8px;
+  text-align: center;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Resultados de operaciones */
+.result-row {
+  margin-bottom: 10px;
+}
+
+.result-cell {
+  display: inline-block;
+  min-width: 50px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* Ajuste de color para inputs */
+input[type="number"] {
+  background-color: #f9f9f9;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+/* Hover sobre inputs */
+input[type="number"]:hover {
+  border-color: #888;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .calculator-container {
+    padding: 15px;
+  }
+
+  .matrix-container input {
+    width: 50px;
+    padding: 6px;
+  }
+}
+
+/* Estilo del selector */
+.matrix-type-selector {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.matrix-type-selector label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.matrix-type-selector select {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
